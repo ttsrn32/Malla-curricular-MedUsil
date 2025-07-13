@@ -1,0 +1,105 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #FDF9F3;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #EED9C4;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+h1 {
+  margin: 0;
+  font-size: 1.5rem;
+  color: #3A7CA5;
+}
+
+#reset {
+  background-color: #3A7CA5;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+main {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.cycle {
+  background-color: #ffffff;
+  border-left: 5px solid #B8D8EB;
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.cycle h2 {
+  margin-top: 0;
+  color: #3A7CA5;
+}
+
+.courses {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.course {
+  padding: 0.4rem 0.6rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  background-color: white;
+  color: #333;
+  font-size: 0.85rem;
+  text-align: center;
+  width: fit-content;
+  max-width: 150px;
+  flex: 1 0 auto;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+/* Estados de cursos */
+.course.locked {
+  background-color: white;
+  border: 1px solid #ccc;
+}
+
+.course.unlocked {
+  background-color: #B8D8EB;
+  color: #333;
+}
+
+.course.taken {
+  background-color: #3A7CA5;
+  color: white;
+}
+
+.course.simulated {
+  background-color: #EED9C4;
+  color: #333;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+  background-color: #F4ECE3;
+  color: #555;
+}
